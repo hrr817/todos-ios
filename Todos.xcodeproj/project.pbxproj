@@ -11,8 +11,12 @@
 		6EED435927FEC1C4001BF692 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EED435827FEC1C4001BF692 /* ContentView.swift */; };
 		6EED435B27FEC1C9001BF692 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6EED435A27FEC1C9001BF692 /* Assets.xcassets */; };
 		6EED435E27FEC1C9001BF692 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6EED435D27FEC1C9001BF692 /* Preview Assets.xcassets */; };
-		6EED436027FEC1C9001BF692 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EED435F27FEC1C9001BF692 /* Persistence.swift */; };
-		6EED436327FEC1C9001BF692 /* Todos.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6EED436127FEC1C9001BF692 /* Todos.xcdatamodeld */; };
+		6EED437227FEC722001BF692 /* TodosDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6EED437027FEC722001BF692 /* TodosDataModel.xcdatamodeld */; };
+		6EED437427FEC78F001BF692 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EED437327FEC78F001BF692 /* DataController.swift */; };
+		6EED437627FF0BAF001BF692 /* AddTodo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EED437527FF0BAF001BF692 /* AddTodo.swift */; };
+		6EED437A27FF0BDB001BF692 /* TodosList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EED437927FF0BDB001BF692 /* TodosList.swift */; };
+		6EED437C27FF0BEE001BF692 /* DoneTodosList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EED437B27FF0BEE001BF692 /* DoneTodosList.swift */; };
+		6EED437E27FF0C1D001BF692 /* EditTodo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EED437D27FF0C1D001BF692 /* EditTodo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,8 +25,12 @@
 		6EED435827FEC1C4001BF692 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		6EED435A27FEC1C9001BF692 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6EED435D27FEC1C9001BF692 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		6EED435F27FEC1C9001BF692 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
-		6EED436227FEC1C9001BF692 /* Todos.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Todos.xcdatamodel; sourceTree = "<group>"; };
+		6EED437127FEC722001BF692 /* TodosDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TodosDataModel.xcdatamodel; sourceTree = "<group>"; };
+		6EED437327FEC78F001BF692 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		6EED437527FF0BAF001BF692 /* AddTodo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTodo.swift; sourceTree = "<group>"; };
+		6EED437927FF0BDB001BF692 /* TodosList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodosList.swift; sourceTree = "<group>"; };
+		6EED437B27FF0BEE001BF692 /* DoneTodosList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoneTodosList.swift; sourceTree = "<group>"; };
+		6EED437D27FF0C1D001BF692 /* EditTodo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTodo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +63,11 @@
 		6EED435527FEC1C3001BF692 /* Todos */ = {
 			isa = PBXGroup;
 			children = (
+				6EED437827FF0BC5001BF692 /* Data */,
+				6EED437727FF0BB6001BF692 /* Components */,
 				6EED435627FEC1C3001BF692 /* TodosApp.swift */,
 				6EED435827FEC1C4001BF692 /* ContentView.swift */,
 				6EED435A27FEC1C9001BF692 /* Assets.xcassets */,
-				6EED435F27FEC1C9001BF692 /* Persistence.swift */,
-				6EED436127FEC1C9001BF692 /* Todos.xcdatamodeld */,
 				6EED435C27FEC1C9001BF692 /* Preview Content */,
 			);
 			path = Todos;
@@ -71,6 +79,26 @@
 				6EED435D27FEC1C9001BF692 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		6EED437727FF0BB6001BF692 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				6EED437527FF0BAF001BF692 /* AddTodo.swift */,
+				6EED437927FF0BDB001BF692 /* TodosList.swift */,
+				6EED437B27FF0BEE001BF692 /* DoneTodosList.swift */,
+				6EED437D27FF0C1D001BF692 /* EditTodo.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		6EED437827FF0BC5001BF692 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				6EED437327FEC78F001BF692 /* DataController.swift */,
+				6EED437027FEC722001BF692 /* TodosDataModel.xcdatamodeld */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,10 +171,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6EED436027FEC1C9001BF692 /* Persistence.swift in Sources */,
 				6EED435927FEC1C4001BF692 /* ContentView.swift in Sources */,
+				6EED437C27FF0BEE001BF692 /* DoneTodosList.swift in Sources */,
+				6EED437A27FF0BDB001BF692 /* TodosList.swift in Sources */,
+				6EED437427FEC78F001BF692 /* DataController.swift in Sources */,
+				6EED437227FEC722001BF692 /* TodosDataModel.xcdatamodeld in Sources */,
+				6EED437E27FF0C1D001BF692 /* EditTodo.swift in Sources */,
+				6EED437627FF0BAF001BF692 /* AddTodo.swift in Sources */,
 				6EED435727FEC1C3001BF692 /* TodosApp.swift in Sources */,
-				6EED436327FEC1C9001BF692 /* Todos.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,13 +383,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		6EED436127FEC1C9001BF692 /* Todos.xcdatamodeld */ = {
+		6EED437027FEC722001BF692 /* TodosDataModel.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				6EED436227FEC1C9001BF692 /* Todos.xcdatamodel */,
+				6EED437127FEC722001BF692 /* TodosDataModel.xcdatamodel */,
 			);
-			currentVersion = 6EED436227FEC1C9001BF692 /* Todos.xcdatamodel */;
-			path = Todos.xcdatamodeld;
+			currentVersion = 6EED437127FEC722001BF692 /* TodosDataModel.xcdatamodel */;
+			path = TodosDataModel.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
